@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     public void SetBounceRate(float rate)
     {
-        rate = Mathf.Clamp(rate, 0.05f, 1.0f);
+        rate = Mathf.Clamp(rate, 0.1f, 1.0f);
 
         ps_emission.rateOverTime = rate * 100.0f;
 
@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
 
     public void SetBurstRate(float rate)
     {
-        rate = Mathf.Clamp(rate, 0.05f, 1.0f);
+        rate = Mathf.Clamp(rate, 0.1f, 1.0f);
         foreach (var effect in burstParticles)
         {
             var main = effect.main;

@@ -60,7 +60,7 @@ public class ExplodeManager: MonoBehaviour
         return newParticleSystem;
     }
 
-    public void SetMoodScale(float moodScale, Vector3)
+    public void SetMoodScale(float moodScale)
     {
         this.moodScale = moodScale;
     }

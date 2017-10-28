@@ -4,9 +4,11 @@ using UnityEngine;
 
 
 
-public class Bar : MonoBehaviour {
+public class Bar : MonoBehaviour
+{
+    [SerializeField]
+    private float scaleMultiplier = 6.0f;
 
-    public float testValue;
 
 	// Use this for initialization
 	void Start () {
@@ -15,13 +17,13 @@ public class Bar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        setScaleRate(testValue);
+        setScaleRate(MoodManager.Instance.MoodValue);
 	}
 
     public void setScaleRate(float value)
     {
-        float yScale = value * 6;
-        yScale = Mathf.Clamp(yScale, 0.40f, 6f);
+        float yScale = value * scaleMultiplier;
+        yScale = Mathf.Clamp(yScale, 0.40f, 1.0f * scaleMultiplier);
         float yRotate = value;
         yRotate = Mathf.Clamp(yRotate, 0.01f, 4f);
         transform.localScale = new Vector3(transform.localScale.x, yScale, transform.localScale.z);
