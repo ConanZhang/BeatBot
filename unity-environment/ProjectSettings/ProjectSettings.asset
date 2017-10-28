@@ -162,7 +162,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 
@@ -503,6 +503,8 @@ PlayerSettings:
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
     1: ENABLE_TENSORFLOW
+    4: ENABLE_TENSORFLOW
+    7: ENABLE_TENSORFLOW
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
