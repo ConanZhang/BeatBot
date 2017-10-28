@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
 
     public List<ParticleSystem> burstParticles;
 
+    public ExplodeManager explodeManager;
 #if TEST_UI
     public float testVal = 0.0f;
 #endif
@@ -46,15 +47,21 @@ public class UIManager : MonoBehaviour
             main.simulationSpeed = rate;
         }
     }
+    public void SetExplodeRate(float rate)
+    {
+        explodeManager.SetMoodScale(rate);
+    }
 
     void Update()
     {
 #if TEST_UI
         SetBounceRate(testVal);
         SetBurstRate(testVal);
+        SetExplodeRate(testVal);
 #else
         SetBounceRate(MoodManager.Instance.MoodValue);
         SetBurstRate(MoodManager.Instance.MoodValue);
+        SetExplodeRate(MoodManager.Instance.MoodValue);
 #endif
     }
 }

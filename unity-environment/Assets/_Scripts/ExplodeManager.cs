@@ -15,6 +15,15 @@ public class ExplodeManager: MonoBehaviour
     [SerializeField]
     private float moodScale;
 
+
+    public float originalSpawnRate;
+    private float spawnRate;
+
+    private float spawnTime;
+
+    public Vector3 minPosition;
+    public Vector3 maxPosition;
+
     void Awake()
     {
         if (Instance != null)
@@ -23,16 +32,43 @@ public class ExplodeManager: MonoBehaviour
         }
         
         Instance = this;
+        spawnRate = originalSpawnRate;
+        spawnTime = spawnRate;
+    }
+
+    void Update()
+    {
+        spawnTime -= Time.deltaTime;
+
+        if (spawnTime <= 0)
+        {
+            Vector3 position = new Vector3(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y), Random.Range(minPosition.z, maxPosition.z) );
+            Explosion(position);
+
+            if (spawnRate < originalSpawnRate * 0.33)
+            {
+                Vector3 position2 = new Vector3(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y), Random.Range(minPosition.z, maxPosition.z) );
+                Explosion(position2);
+            }
+
+            if (spawnRate < originalSpawnRate * 0.66)
+            {
+                Vector3 position3 = new Vector3(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y), Random.Range(minPosition.z, maxPosition.z) );
+                Explosion(position3);
+            }
+
+
+            spawnTime = spawnRate;
+        }
     }
 
     /// <summary>
     /// Create an explosion at the given location. Size small.
     /// </summary>
     /// <param name="position"></param>
-    public void Explosion(Vector3 position)
+    void Explosion(Vector3 position)
     {
         instantiate(explode, position);
-
     }
 
     /// <summary>
@@ -48,9 +84,6 @@ public class ExplodeManager: MonoBehaviour
 			Quaternion.identity
 			) as ParticleSystem;
 
-        ParticleSystem.MainModule particleSystemMainModule =  newParticleSystem.main;
-        particleSystemMainModule.startSpeed = new ParticleSystem.MinMaxCurve(0.5f + (0.5f * moodScale), 2 + (2 * moodScale));
-
 		// Make sure it will be destroyed
 		Destroy(
 			newParticleSystem.gameObject,
@@ -63,5 +96,10 @@ public class ExplodeManager: MonoBehaviour
     public void SetMoodScale(float moodScale)
     {
         this.moodScale = moodScale;
+
+        if (moodScale > 0)
+        {
+            this.spawnRate = originalSpawnRate - (originalSpawnRate * moodScale);
+        }
     }
 }
