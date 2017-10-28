@@ -8,16 +8,15 @@ using System.Collections;
 /// </summary>
 public class ExplodeManager: MonoBehaviour
 {
-    /// <summary>
-    /// Singleton
-    /// </summary>
     public static ExplodeManager Instance;
     
     public ParticleSystem explode;
 
+    [SerializeField]
+    private float moodScale;
+
     void Awake()
     {
-        // Register the singleton
         if (Instance != null)
         {
             Debug.LogError("Multiple instances of SpecialEffectsHelper!");
@@ -48,7 +47,10 @@ public class ExplodeManager: MonoBehaviour
 			position,
 			Quaternion.identity
 			) as ParticleSystem;
-		
+
+        ParticleSystem.MainModule particleSystemMainModule =  newParticleSystem.main;
+        particleSystemMainModule.startSpeed = new ParticleSystem.MinMaxCurve(0.5f + (0.5f * moodScale), 2 + (2 * moodScale));
+
 		// Make sure it will be destroyed
 		Destroy(
 			newParticleSystem.gameObject,
@@ -56,5 +58,10 @@ public class ExplodeManager: MonoBehaviour
 			);
 		
         return newParticleSystem;
+    }
+
+    public void SetMoodScale(float moodScale, Vector3)
+    {
+        this.moodScale = moodScale;
     }
 }
