@@ -2,8 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class MoodManager : Singleton<MoodManager> 
 {
@@ -149,7 +152,9 @@ public class MoodManager : Singleton<MoodManager>
 
         lowValueWriter.Close();
 
+#if UNITY_EDITOR
         AssetDatabase.ImportAsset(lowValueFilePath);
+#endif
 
         dBSum = 0.0f;
         freqSum = 0.0f;
@@ -170,7 +175,9 @@ public class MoodManager : Singleton<MoodManager>
 
         highValueWriter.Close();
 
+#if UNITY_EDITOR
         AssetDatabase.ImportAsset(highValueFilePath);
+#endif
     }
 
 }
