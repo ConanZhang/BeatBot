@@ -18,7 +18,7 @@ public class FadeSkybox : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	    if (moodScale > previousMoodScale)
+	    if (moodScale < previousMoodScale)
 	    {
             RenderSettings.skybox.SetColor("_Color1", Color.Lerp(Color1[0], Color1[1], moodScale));
             RenderSettings.skybox.SetColor("_Color2", Color.Lerp(Color2[0], Color2[1], moodScale));
