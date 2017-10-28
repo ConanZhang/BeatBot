@@ -68,6 +68,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moodScale: 25.62
+  LeftEndPos: {fileID: 224428277979066524, guid: 2bc83144e2ef7f14dba13bd42c0610f6,
+    type: 2}
+  RightEndPos: {fileID: 224697182095974956, guid: 329ebdcd87085e8489b675cde52098fe,
+    type: 2}
 --- !u!222 &222796084963171228
 CanvasRenderer:
   m_ObjectHideFlags: 1

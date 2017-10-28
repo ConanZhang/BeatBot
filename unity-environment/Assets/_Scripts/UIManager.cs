@@ -1,15 +1,20 @@
-﻿using System.Collections;
+﻿//#define TEST_UI
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : Singleton<UIManager>
+
+public class UIManager : MonoBehaviour
 {
     public ParticleSystem ps;
     public ParticleSystem.EmissionModule ps_emission;
 
     public List<ParticleSystem> burstParticles;
 
+#if TEST_UI
     public float testVal = 0.0f;
+#endif
 
     void Start ()
     {
@@ -23,7 +28,7 @@ public class UIManager : Singleton<UIManager>
         ps_emission.rateOverTime = rate * 100.0f;
 
         var psShape = ps.shape;
-        psShape.arcSpeed = rate * 1.0f;
+        psShape.arcSpeed = rate * 1.5f;
     }
     public void SetArcLength(float arcLength, float orientation)
     {
@@ -41,10 +46,15 @@ public class UIManager : Singleton<UIManager>
             main.simulationSpeed = rate;
         }
     }
-	
-	void Update ()
+
+    void Update()
     {
+#if TEST_UI
         SetBounceRate(testVal);
         SetBurstRate(testVal);
+#else
+        SetBounceRate(MoodManager.Instance.MoodValue);
+        SetBurstRate(MoodManager.Instance.MoodValue);
+#endif
     }
 }
