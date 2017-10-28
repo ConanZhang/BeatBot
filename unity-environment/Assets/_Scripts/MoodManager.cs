@@ -149,20 +149,25 @@ public class MoodManager : Agent
             if (moodVal < 0.0f)
             {
                 // give it a bad reward if it guesses outside the bounds
-                reward = moodVal;
+                reward = -1.0f;
             }
             else if (moodVal > 1.0f)
             {
-                reward = -moodVal;
+                reward = -1f;
             }
             else
             {
                 float difference = Mathf.Abs(moodVal - GetCorrectMoodVal());
 
+
                 reward = 1.0f - difference;
             }
-
         }
+        else
+        {
+            reward = 0.0f;
+        }
+        done = true;
     }
 
     private void CaptureHighSound()
@@ -188,14 +193,23 @@ public class MoodManager : Agent
         AnalyzeSound();
         //MoodValue = (dBVal - min_dB) / (max_dB - min_dB);
 
-        if (Input.GetKey(KeyCode.UpArrow))
+
+        if (State == MoodManagerState.SamplingInput)
         {
-            CaptureHighSound();
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                CaptureHighSound();
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                CaptureLowSound();
+            }
+
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            CaptureLowSound();
-        }
+    }
+
+    public override void AgentReset()
+    {
     }
 
     private void OnApplicationQuit()

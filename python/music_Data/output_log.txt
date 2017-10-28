@@ -1,0 +1,964 @@
+Mono path[0] = 'C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/python/music_Data/Managed'
+Mono config path = 'C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/python/music_Data/MonoBleedingEdge/etc'
+PlayerConnection initialized from C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/python/music_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55052
+Multi-casting "[IP] 128.110.68.158 [Port] 55052 [Flags] 2 [Guid] 372248350 [EditorId] 3123275259 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-031MD2J) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55052]
+PlayerConnection already initialized - listening to [0.0.0.0:55052]
+Player data archive not found at `C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/python/music_Data/data.unity3d`, using local filesystem
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970M (ID=0x13d8)
+    Vendor:   NVIDIA
+    VRAM:     3040 MB
+    Driver:   21.21.13.7651
+Begin MonoManager ReloadAssembly
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.Core.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.Numerics.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.ValueTuple.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\TensorFlowSharp.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Loading C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\uAudio.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.dll (this message is harmless)
+- Completed reload, in  0.067 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.057553 ms
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\python\music_Data\Managed\System.Data.dll (this message is harmless)
+dB val: -Infinity
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 1994 -> priority: 1 
+  Thread -> id: 95a0 -> priority: 1 
+  Thread -> id: 4d54 -> priority: 1 
+  Thread -> id: 174 -> priority: 1 
+dB val: 8.678967
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 517.8062
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.72568
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 87.26741
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.677676
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 778.0934
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.277036
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 161.181
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.879486
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 86.72961
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.203383
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 188.3732
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.303967
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 183.008
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 10.12806
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 781.1918
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.27422
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 164.232
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 4.817706
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 253.2224
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.262954
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 519.7891
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 10.62395
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 1305.275
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.957316
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 250.7057
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.144835
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 195.5313
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.899774
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 190.654
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 6.465818
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 261.2316
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.035666
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 258.492
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.10475
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 166.1162
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.423047
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 229.7734
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 11.58014
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 160.4888
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.488964
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 46.34809
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 11.32578
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 179.4559
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.887153
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 171.6498
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.651625
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 169.9086
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.04382
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 169.2978
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.04031
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 100.3391
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.039828
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 582.4861
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.036032
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 109.0706
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.669827
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 391.5394
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.093866
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 1327.354
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 9.577561
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 254.2567
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 6.735839
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 253.0092
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 7.577628
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 178.2978
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 8.815872
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 236.9618
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 6.574339
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 299.4709
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 6.809903
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 585.5657
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 5.367746
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 515.957
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 13.7095
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 39.0134
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 13.8209
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 43.27303
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 13.50832
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 46.12468
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 2.105377
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 536.4847
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 13.52581
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 47.47599
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 14.71199
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 37.34488
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 14.20805
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 46.59801
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
+dB val: 2.562214
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:101)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 101)
+
+Hz val: 303.7983
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MoodManager:AnalyzeSound() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:129)
+MoodManager:Update() (at C:\Users\Ryan\Desktop\Unity Projects\MachineLearning2017\unity-environment\Assets\_Scripts\MoodManager.cs:193)
+ 
+(Filename: C:/Users/Ryan/Desktop/Unity Projects/MachineLearning2017/unity-environment/Assets/_Scripts/MoodManager.cs Line: 129)
+
