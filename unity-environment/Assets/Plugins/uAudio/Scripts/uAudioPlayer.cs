@@ -327,7 +327,7 @@ namespace uAudio
                                 UnityEngine.Debug.LogWarning("%B2%");
 #endif
 
-#if !UNITY_STANDALONE_WIN && blank
+#if !UNITY_STANDALONE_WIN
                             
                                 //WWW w = new WWW(targetFile);
 
@@ -388,8 +388,8 @@ namespace uAudio
                                 NLayer.MpegFile c = new NLayer.MpegFile(readFullyStream, true);
                                 //playbackDevice = m;
 
-                                if (startOff == TimeSpan.Zero)
-                                    c.ReadSamples(buff, 0, buff.Length);
+                                if(startOff == TimeSpan.Zero)
+                                c.ReadSamples(buff, 0, buff.Length);
 
                                 playbackDevice = c;
                              //   UAudio.TotalTime
@@ -500,9 +500,8 @@ namespace uAudio
                     flare_SongEnd = true;
                 }
             }
-            catch(System.Exception e)
+            catch
             {
-                UnityEngine.Debug.LogError("#trg56hgtyhty"+e.Message);
                 UnityEngine.Debug.LogError("Decode Error #8f76s8dsvsd");
             }
         }

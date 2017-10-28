@@ -27,7 +27,8 @@ Add the script Assets\Plugins\uAudio\Scripts\uAudioPlayer_UI.cs to an object.
 		UnityEngine.UI.Button bn_pause - this pauses the song
 		UnityEngine.UI.Button bn_stop - this stops the song
 
-You must have a Audio Listener in the scene, as uAudio pipes audio into the Unity sound system.
+No need to have an Audio Listener in the scene, but this will not conflict(in anyway) with an Audio Listener if you do have one.
+uAudio calls directly into the windows audio library to play the audio.
 
 If you have audio cutting out, and you have a number of audio sources, try to change the priority of the song audio source.
 

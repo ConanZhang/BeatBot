@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class MusicAgent : Agent
 {
+
+    private void Start()
+    {
+
+        
+    }
+
+
     public override List<float> CollectState()
     {
         List<float> state = new List<float>();
