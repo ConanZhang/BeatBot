@@ -2,10 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
 
-public class MoodManager : Agent
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+public class MoodManager : Agent 
 {
     public enum MoodManagerState
     {
@@ -226,8 +229,11 @@ public class MoodManager : Agent
             lowValueWriter.WriteLine(avgLowFreq);
 
             lowValueWriter.Close();
-
+#if UNITY_EDITOR
             AssetDatabase.ImportAsset(lowValueFilePath);
+#endif
+
+
 
             dBSum = 0.0f;
             freqSum = 0.0f;
@@ -247,9 +253,9 @@ public class MoodManager : Agent
             highValueWriter.WriteLine(avgHighFreq);
 
             highValueWriter.Close();
-
+#if UNITY_EDITOR
             AssetDatabase.ImportAsset(highValueFilePath);
-
+#endif
         }
     }
 
