@@ -140,34 +140,31 @@ public class MoodManager : Agent
     }
     public override void AgentStep(float[] act)
     {
-        if(State == MoodManagerState.Learning)
+
+        float moodVal = act[0];
+
+        MoodValue = Mathf.Clamp(moodVal, 0.0f, 1.0f);
+
+        if (moodVal < 0.0f)
         {
-            float moodVal = act[0];
-
-            MoodValue = moodVal;
-
-            if (moodVal < 0.0f)
-            {
-                // give it a bad reward if it guesses outside the bounds
-                reward = -1.0f;
-            }
-            else if (moodVal > 1.0f)
-            {
-                reward = -1f;
-            }
-            else
-            {
-                float difference = Mathf.Abs(moodVal - GetCorrectMoodVal());
-
-
-                reward = 1.0f - difference;
-            }
+            // give it a bad reward if it guesses outside the bounds
+            reward = -1.0f;
+            done = true;
+        }
+        else if (moodVal > 1.0f)
+        {
+            reward = -1f;
+            done = true;
         }
         else
         {
-            reward = 0.0f;
+            float difference = Mathf.Abs(moodVal - GetCorrectMoodVal());
+
+
+            //reward = 1.0f - difference;
+            reward = 0.5f;
         }
-        done = true;
+
     }
 
     private void CaptureHighSound()
