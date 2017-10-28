@@ -228,8 +228,7 @@ namespace uAudio
 #if UNITY_STANDALONE_WIN
                 _theAudioStream.targetWindows = true;
 #else
-                // bypass hack
-        //_theAudioStream.targetWindows = true;
+        _theAudioStream.targetWindows = false;
 #endif
                 _theAudioStream.my_uAudioPlayer2 = my_uAudioPlayer;
                 _theAudioStream.startVolume = my_uAudioPlayer.Volume;

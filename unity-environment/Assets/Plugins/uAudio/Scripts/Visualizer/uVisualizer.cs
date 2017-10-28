@@ -5,19 +5,19 @@ using UnityEngine;
 public class uVisualizer : MonoBehaviour
 {
     //private int _NumSamples = 1024;
-    //public uVizCore myCore;
+    public uVizCore myCore;
 
 
 
     private float[] _SamplesLeft, _SamplesRight;
     private float[] _SpectrumLeft, _SpectrumRight;
-    public UnityEngine.AudioSource theAudioSource;
+    //public UnityEngine.AudioSource theAudioSource;
     public UnityEngine.UI.Slider[] SliderList;
     public UnityEngine.UI.Slider[] SliderList2;
     public UnityEngine.UI.Slider aSliderLeft;
     public UnityEngine.UI.Slider aSliderRight;
 
-    public FFTWindow myFFTWindow = FFTWindow.Rectangular;
+    //public FFTWindow myFFTWindow = FFTWindow.Rectangular;
 
     public float Viz_Scale = 1;
 
@@ -25,10 +25,10 @@ public class uVisualizer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-           _SamplesLeft = new float[SliderList.Length];
-        _SamplesRight = new float[SliderList.Length];
-        _SpectrumLeft = new float[SliderList.Length];
-        _SpectrumRight = new float[SliderList.Length];
+           _SamplesLeft = new float[myCore._NumSamples];
+        _SamplesRight = new float[myCore._NumSamples];
+        _SpectrumLeft = new float[myCore._NumSamples];
+        _SpectrumRight = new float[myCore._NumSamples];
         var r = new UnityEngine.UI.Slider[100];
         //int index = 0;
         //int offset = 0;
@@ -45,19 +45,11 @@ public class uVisualizer : MonoBehaviour
         //}
         //SliderList = r;
 
-        StartCoroutine(updateViz());
-        //myCore.send_data += updateSectrumViz;
+        //StartCoroutine(updateViz());
+        myCore.send_data += updateSectrumViz;
 
     }
-    System.Collections.IEnumerator updateViz()
-    {
-        while (true)
-        {
-            theAudioSource.GetSpectrumData(_SpectrumLeft, 0, myFFTWindow);
-            updateSectrumViz(_SpectrumLeft);
-            yield return new WaitForFixedUpdate();
-        }
-    }
+
     //void LoadGuiControls()
     //{
     //  foreach(GameObject g in  GameObjects)
