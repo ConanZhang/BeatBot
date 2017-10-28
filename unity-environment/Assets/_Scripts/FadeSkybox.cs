@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FadeSkybox : MonoBehaviour
 {
+    [SerializeField]
     private float moodScale;
     private float previousMoodScale;
     public Color[] Color1;
