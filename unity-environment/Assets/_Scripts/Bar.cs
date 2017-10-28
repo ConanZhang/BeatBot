@@ -17,7 +17,7 @@ public class Bar : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-        setScaleRate(MoodManager.Instance.MoodValue);
+        setScaleRate(MoodManager.MoodValue);
 	}
 
     public void setScaleRate(float value)

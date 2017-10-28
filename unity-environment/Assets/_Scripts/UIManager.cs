@@ -59,9 +59,9 @@ public class UIManager : MonoBehaviour
         SetBurstRate(testVal);
         SetExplodeRate(testVal);
 #else
-        SetBounceRate(MoodManager.Instance.MoodValue);
-        SetBurstRate(MoodManager.Instance.MoodValue);
-        SetExplodeRate(MoodManager.Instance.MoodValue);
+        SetBounceRate(MoodManager.MoodValue);
+        SetBurstRate(MoodManager.MoodValue);
+        SetExplodeRate(MoodManager.MoodValue);
 #endif
     }
 }

@@ -20,7 +20,7 @@ public class FadeSkybox : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        SetMoodScale(MoodManager.Instance.MoodValue);
+        SetMoodScale(MoodManager.MoodValue);
 
 
 	    //if (moodScale < previousMoodScale)

@@ -132,8 +132,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d08fd8222b2dc4b833080c135f0e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min_dB: -25
-  max_dB: 25
-  MoodValue: 0
+  brain: {fileID: 0}
+  observations: []
+  maxStep: 0
+  resetOnDone: 1
+  reward: 0
+  done: 0
+  value: 0
+  CummulativeReward: 0
+  stepCounter: 0
+  agentStoredAction: []
+  memory: []
+  id: 0
+  State: 1
   lowValueFilePath: Assets/_Data/lowVals.txt
   highValueFilePath: Assets/_Data/highVals.txt

@@ -5,15 +5,20 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class MoodManager : Singleton<MoodManager> 
+public class MoodManager : Agent
 {
+    public enum MoodManagerState
+    {
+        SamplingInput,
+        Learning
+    }
+
     AudioSource audioSource;
-    [Header("Clamping dB values")]
-    public float min_dB = -25.0f;
-    public float max_dB = 25.0f;
+    [Header("State this object is in")]
+    public MoodManagerState State = MoodManagerState.SamplingInput;
 
     [Header("The all seeing, all knowing mood value that we must edit")]
-    public float MoodValue = 0.5f;
+    public static float MoodValue = 0.5f;
 
     [Header("File paths for output data files")]
     public string lowValueFilePath = "Assets/_Data/lowVals.txt";
@@ -26,11 +31,16 @@ public class MoodManager : Singleton<MoodManager>
     private float rmsVal;
 
     private float dBVal;
-    private float pitchVal;
+    private float freqVal;
 
     private float[] samples;
     private float[] spectrum;
     private float sampleRate;
+
+    private float lowdBVal;
+    private float lowFreqVal;
+    private float highdBVal;
+    private float highFreqVal;
 
     // Lists of high and low values stored in format dB, Hz 
     private List<Tuple<float, float>> highValues;
@@ -38,6 +48,7 @@ public class MoodManager : Singleton<MoodManager>
 
     private void Start()
     {
+        
         audioSource = GetComponent<AudioSource>();
 
         highValues = new List<Tuple<float, float>>();
@@ -46,6 +57,25 @@ public class MoodManager : Singleton<MoodManager>
         samples = new float[qSamples];
         spectrum = new float[qSamples];
         sampleRate = AudioSettings.outputSampleRate;
+
+        if(State == MoodManagerState.Learning)
+        {
+            StreamReader lowValueReader = new StreamReader(lowValueFilePath);
+            StreamReader highValueReader = new StreamReader(highValueFilePath);
+
+            lowdBVal = float.Parse(lowValueReader.ReadLine());
+            lowFreqVal = float.Parse(lowValueReader.ReadLine());
+
+            lowValueReader.Close();
+
+            highdBVal = float.Parse(highValueReader.ReadLine());
+            highFreqVal = float.Parse(highValueReader.ReadLine());
+
+            highValueReader.Close();
+
+
+            
+        }
     }
     private void AnalyzeSound()
     {
@@ -64,7 +94,7 @@ public class MoodManager : Singleton<MoodManager>
         dBVal = 20 * Mathf.Log10(rmsVal / refRmsVal);
 
         // calculates a dB val clamped between low and high defined points
-        dBVal = Mathf.Clamp(dBVal, min_dB, max_dB);
+        //dBVal = Mathf.Clamp(dBVal, min_dB, max_dB);
         Debug.Log("dB val: " + dBVal);
 
         // CALCULATING Hz
@@ -92,23 +122,68 @@ public class MoodManager : Singleton<MoodManager>
         }
 
         // calculate the dominant frequency at that frame
-        pitchVal = frequencyAtIndex * (sampleRate / 2) / qSamples;
-        Debug.Log("Hz val: " + pitchVal);
+        freqVal = frequencyAtIndex * (sampleRate / 2) / qSamples;
+        Debug.Log("Hz val: " + freqVal);
+    }
+
+    public override List<float> CollectState()
+    {
+        List<float> state = new List<float>();
+
+        state.Add(dBVal);
+        state.Add(freqVal);
+
+        return state;
+    }
+    public override void AgentStep(float[] act)
+    {
+        if(State == MoodManagerState.Learning)
+        {
+            float moodVal = act[0];
+
+            MoodValue = moodVal;
+
+            if (moodVal < 0.0f)
+            {
+                // give it a bad reward if it guesses outside the bounds
+                reward = moodVal;
+            }
+            else if (moodVal > 1.0f)
+            {
+                reward = -moodVal;
+            }
+            else
+            {
+                float difference = Mathf.Abs(moodVal - GetCorrectMoodVal());
+
+                reward = 1.0f - difference;
+            }
+
+        }
     }
 
     private void CaptureHighSound()
     {
-        highValues.Add(new Tuple<float, float>(dBVal, pitchVal));
+        highValues.Add(new Tuple<float, float>(dBVal, freqVal));
     }
     private void CaptureLowSound()
     {
-        lowValues.Add(new Tuple<float, float>(dBVal, pitchVal));
+        lowValues.Add(new Tuple<float, float>(dBVal, freqVal));
+    }
+
+    private float GetCorrectMoodVal()
+    {
+        float correctdBVal = (dBVal - lowdBVal) / (highdBVal - lowdBVal);
+        float correctFreqVal = (freqVal - lowFreqVal) / (highFreqVal - lowFreqVal);
+
+        float correctMoodVal = (correctdBVal + correctFreqVal) / 2.0f;
+        return correctMoodVal;
     }
 
     private void Update()
     {
         AnalyzeSound();
-        MoodValue = (dBVal + Mathf.Abs(min_dB)) / (max_dB + Mathf.Abs(min_dB));
+        //MoodValue = (dBVal - min_dB) / (max_dB - min_dB);
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -122,55 +197,60 @@ public class MoodManager : Singleton<MoodManager>
 
     private void OnApplicationQuit()
     {
-        Debug.Log("Low size: " + lowValues.Count);
-        Debug.Log("High size: " + highValues.Count);
-
-        StreamWriter lowValueWriter = new StreamWriter(lowValueFilePath, true);
-        StreamWriter highValueWriter = new StreamWriter(highValueFilePath, true);
-
-        float avgLowFreq, avgHighFreq;
-        float avgLowdB, avgHighdB;
-        float freqSum = 0.0f, dBSum = 0.0f;
-
-        // Calculate the average for low values
-        foreach (Tuple<float, float> pair in lowValues)
+        if (State == MoodManagerState.SamplingInput)
         {
-            dBSum += pair.Item1;
-            freqSum += pair.Item2;
+
+            Debug.Log("Low size: " + lowValues.Count);
+            Debug.Log("High size: " + highValues.Count);
+
+            StreamWriter lowValueWriter = new StreamWriter(lowValueFilePath, false);
+            StreamWriter highValueWriter = new StreamWriter(highValueFilePath, false);
+
+            float avgLowFreq, avgHighFreq;
+            float avgLowdB, avgHighdB;
+            float freqSum = 0.0f, dBSum = 0.0f;
+
+            // Calculate the average for low values
+            foreach (Tuple<float, float> pair in lowValues)
+            {
+                dBSum += pair.Item1;
+                freqSum += pair.Item2;
+            }
+            avgLowdB = dBSum / lowValues.Count;
+            avgLowFreq = freqSum / lowValues.Count;
+
+            Debug.Log("avg low: " + avgLowdB + " " + avgLowFreq);
+
+            // Writing values into files
+            lowValueWriter.WriteLine(avgLowdB);
+            lowValueWriter.WriteLine(avgLowFreq);
+
+            lowValueWriter.Close();
+
+            AssetDatabase.ImportAsset(lowValueFilePath);
+
+            dBSum = 0.0f;
+            freqSum = 0.0f;
+
+            // Calculate the average for high values
+            foreach (Tuple<float, float> pair in highValues)
+            {
+                dBSum += pair.Item1;
+                freqSum += pair.Item2;
+            }
+            avgHighdB = dBSum / highValues.Count;
+            avgHighFreq = freqSum / highValues.Count;
+
+            Debug.Log("avg high: " + avgHighdB + " " + avgHighFreq);
+
+            highValueWriter.WriteLine(avgHighdB);
+            highValueWriter.WriteLine(avgHighFreq);
+
+            highValueWriter.Close();
+
+            AssetDatabase.ImportAsset(highValueFilePath);
+
         }
-        avgLowdB = dBSum / lowValues.Count;
-        avgLowFreq = freqSum / lowValues.Count;
-
-        Debug.Log("avg low: " + avgLowdB + " " + avgLowFreq);
-
-        // Writing values into files
-        lowValueWriter.WriteLine(avgLowdB);
-        lowValueWriter.WriteLine(avgLowFreq);
-
-        lowValueWriter.Close();
-
-        AssetDatabase.ImportAsset(lowValueFilePath);
-
-        dBSum = 0.0f;
-        freqSum = 0.0f;
-
-        // Calculate the average for high values
-        foreach (Tuple<float, float> pair in highValues)
-        {
-            dBSum += pair.Item1;
-            freqSum += pair.Item2;
-        }
-        avgHighdB = dBSum / highValues.Count;
-        avgHighFreq = freqSum / highValues.Count;
-
-        Debug.Log("avg high: " + avgHighdB + " " + avgHighFreq);
-
-        highValueWriter.WriteLine(avgHighdB);
-        highValueWriter.WriteLine(avgHighFreq);
-
-        highValueWriter.Close();
-
-        AssetDatabase.ImportAsset(highValueFilePath);
     }
 
 }

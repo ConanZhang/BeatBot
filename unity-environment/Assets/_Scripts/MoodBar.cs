@@ -25,7 +25,7 @@ public class MoodBar : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        SetMoodScale(MoodManager.Instance.MoodValue);
+        SetMoodScale(MoodManager.MoodValue);
         rectTransform.anchoredPosition = Vector2.Lerp(LeftEndPos.anchoredPosition, RightEndPos.anchoredPosition, moodScale);
 	}
 
